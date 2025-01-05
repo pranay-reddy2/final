@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   <style>
+    .navi-bar{
+        background-color: gray;
+        position:sticky;
+        width: 100%;
+        top:0;
+        left:0;
+        margin:0;
+        display: flex;
+        align-items: center;
+    }
+    .navi-bar div:hover {
+    background-color: #444;
+    cursor: pointer;
+}
+    .home,.game,.tournament,.about,.logo{
+        display: inline-block;
+        margin:10px;
+        font-weight: bold;
+    } 
+    body{
+        background-color: black;
+    }
+    .main{
+        background-image:url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRVSaUB2toF4ErYCZPpNmlgiugdLWJE86e0ng&s');
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 700px;
+        width: 100%;
+    }
+    h1{
+        color:aqua;
+        display: flex;
+        justify-content: center;
+        margin-right:90px;
+        margin: 100px;
+    }
+    p{
+        color: gray;
+    }
+    .Game{
+        display:flex;
+        justify-content: space-evenly;
+        color:white;
+    }
+    .img3{
+        height:225px;
+        
+}
+.img1,.img2,.img3,.t1,.t2,.t3 {
+    transition: transform 0.5s ease-in-out;
+}
+
+.img1:hover {
+    transform: scale(1.1);
+}
+.img2:hover {
+    transform: scale(1.1);
+}
+.img3:hover {
+    transform: scale(1.1);
+}
+.t1:hover {
+    transform: scale(1.1);
+}
+.t2:hover {
+    transform: scale(1.1);
+}
+.t3:hover {
+    transform: scale(1.1);
+}
+
+    .t1,.t2,.t3{
+        display: flex;
+        justify-content:space-around ;
+        margin: 20px;
+    }
+    .de{
+        margin: 20px;
+    }
+    footer{
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+    }
+    footer a{
+            color: lightgray;
+            text-decoration: none;
+    }
+    footer a:hover{
+            text-decoration: underline;
+    }
+   </style> 
+</head>
+<body>
+    <div class="navi-bar"> 
+        <div class="logo">
+            <img src="mine1-removebg-preview.png">
+        </div>
+        <div class="home">
+            Home
+        </div>
+        <div class="game">
+            Game
+        </div>
+        <div class="tournament">
+            Tournaments
+        </div>
+    </div>
+    <div class="main">
+    </div>
+    <h1 class="start">Discover our games</h1>
+    <div class="Game">
+        <div class="minecraft">
+            <img class="img1" src="game img 1.jpeg">
+            <h2>Minecraft</h2>
+            <p>Sandbox Survival, Adventure<br>
+            Single-player + Multiplayer</p>
+        </div>
+        <div class="dungeon">
+            <img class="img2" src="img game 2.jpeg">
+            <h2>Minecraft Dungeons</h2>
+            <p>Dungeon Crawl, Action RPG<br>
+                Single-player + Multiplayer</p>
+        </div>
+        <div class="legend">
+            <img class="img3" src="img game 3.jpeg">
+            <h2>Minecraft Legends</h2>
+            <p>Action RPG, Strategy<br>
+                Single-player + Multiplayer</p>
+        </div>
+    </div>
+    <div class="Tournament">
+        <h1>Tournaments</h1>
+        <div class="t1">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSjJ3vdGgLXKSzpz8FdWs2-BOcshRuiSPRcag&s">
+            <p class="de">MC Championship (MCC) is a Minecraft tournament organised by YouTuber Scott Major (known online as Smajor1995 or Dangthatsalongname) and Minecraft collective Noxcrew. Ten teams of four compete in a series of Minecraft minigames. The tournament began its first season on November 17, 2019. Its fourth and current season began on May 4, 2024</p>
+        </div>
+        <div class="t2">
+            <img src="t2.jpeg">
+            <p class="de">Block Wars is a monthly Minecraft event for friends and creators, focused on creating highly engaging gameplay run by Tommy333 & organized by Wolfeei.It is 40 player event, with 8 team.8 games are played and top 2 team will duel to win the tournament</p>
+        </div>
+        <div class="t3">
+            <img src="data:image/jpeg;base64,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">
+            <p class="de">Minecraft Monday was a popular Minecraft event hosted by Keemstar for popular Minecraft streamers every Monday. The event split the players into teams of two and originally featured rounds of Minecraft Hunger Games before adopting other games, such as spleef, in later weeks. Members of the winning team split prize money, which was $10,000 in the first two weeks and $5,000 in subsequent weeks</p>
+        </div>
+    </div>
+
+    <footer>
+        <p></p> 
+        <p>&copy; 2010 Your Company | <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+    </footer>
+    <script>
+    const hom = document.querySelector('.home');
+    const gam = document.querySelector('.game');
+    const tour = document.querySelector('.tournament');
+
+hom.addEventListener('click', function() {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+});
+
+gam.addEventListener('click', function() {
+    document.querySelector('.start').scrollIntoView({ behavior: 'smooth' });
+});
+
+tour.addEventListener('click', function() {
+    document.querySelector('.Tournament').scrollIntoView({ behavior: 'smooth' });
+});
+const minecraft = document.querySelector('.minecraft');
+const dungeon = document.querySelector('.dungeon');
+const legend = document.querySelector('.legend');
+
+minecraft.addEventListener('click', function() {
+    window.location.href = 'https://www.minecraft.net/en-us/about-minecraft';
+});
+
+dungeon.addEventListener('click', function() {
+    window.location.href = 'https://www.minecraft.net/en-us/about-dungeons'; 
+});
+
+legend.addEventListener('click', function() {
+    window.location.href = 'https://www.minecraft.net/en-us/about-legends';
+});
+const tour1 = document.querySelector('.t1');
+const tour2 = document.querySelector('.t2');
+const tour3 = document.querySelector('.t3');
+tour1.addEventListener('click', function() {
+    window.location.href = 'https://mcc.live/'; 
+});
+
+tour2.addEventListener('click', function() {
+    window.location.href = 'https://blockwars.games/'; 
+});
+
+tour3.addEventListener('click', function() {
+    window.location.href = 'https://minecraft-monday.fandom.com/wiki/Minecraft_Monday_Wiki';
+});
+
+
+
+
+    </script>
+    
+
+</body>
+</html>
