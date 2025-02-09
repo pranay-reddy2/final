@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./gtw.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="nav-bar">
+        <div class="homepage">
+            Home
+        </div>
+        <div class="maingame">
+            Game    
+        </div>
+        <div class="leaderboard">
+            LeaderBoard
+        </div>
+        <div class="Signin">
+            <button id="sign-btn" onclick="sign()">Sign in</button>
+        </div>
+    </div>
+    <div class="wrapper">
+        <h1>Guess The Word</h1>
+        <div class="content"> 
+            <input type="text" class="typing-input" maxlength="1">
+            <div class="inputs">
+            </div>
+            <div class="details">
+                <P class="hint">Hint: <spam></spam></P> 
+                <P class="guess-left">Remaining Guesses: <spam></spam></P>
+                <P class="wrong-letter">Wrong letters: <spam></spam></P>
+            </div>  
+            <button class="reset-btn">Reset Game</button>
+        </div>
+    </div>
+    <div class="game">
+        <div class="hang">
+            <h1>HANGMAN</h1>
+            <img class="hang1" src="hangman.webp">
+        </div>
+        <div class="guess">
+            <h1>Guess the Word</h1>
+            <img class="guess1"src="guess.webp">
+        </div>
+        <div class="scramble">
+            <h1>Scramble Word</h1>
+            <img class="scramble1" src="scramble.webp">
+        </div>
+    </div>
+    <script src="./word.js"></script>
+    <script type="module" src="./gtw.js"></script>
+    <script type="module" src="./update.js"></script>
+    </body>
+</html> 

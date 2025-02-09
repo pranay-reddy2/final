@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./srcamble.css">
+
+    <title>Word Scramble Game</title>
+</head>
+<body>
+    <div class="nav-bar">
+        <div class="homepage">Home</div>
+        <div class="maingame">Game</div>
+        <div class="leaderboard">LeaderBoard</div>
+        <div class="Signin">
+            <button id="sign-btn">Sign in</button>
+        </div>
+    </div>
+
+    <div class="container"> 
+        <h2>Word Scramble</h2>
+        <div class="content">
+            <p class="word"></p>
+            <div class="details">
+                <p class="hint">Hint: <span></span></p>
+                <p class="time">Time Left: <span><b>30</b>s</span></p>
+            </div>
+            <input type="text" placeholder="Enter your guess">
+            <div class="buttons">
+                <button class="refresh-word">Refresh Word</button>
+                <button class="check-word">Check Word</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="game" style="display: none;">
+        <div class="hang">
+            <h1>HANGMAN</h1>
+            <img class="hang1" src="hangman.webp">
+        </div>
+        <div class="guess">
+            <h1>Guess the Word</h1>
+            <img class="guess1" src="guess.webp">
+        </div>
+        <div class="scramble">
+            <h1>Scramble Word</h1>
+            <img class="scramble1" src="scramble.webp">
+        </div>
+    </div>
+
+    <script src="./word2.js"></script>
+    <script type="module" src="./srcamble.js"></script>
+    <script type="module" src="./update.js"></script>
+</body>
+</html>

@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
+        
+body {
+    background-color: black;
+    color: white;
+    font-family: 'Orbitron', sans-serif;
+    text-align: center;
+}
+.leaderboard-title {
+    margin-top: 50px;
+    font-size: 2.5em;
+    color: limegreen;
+    text-shadow: 0 0 20px limegreen, 0 0 40px green;
+    margin-bottom: 20px;
+    animation: glow 1.5s infinite alternate;
+}
+.leaderboard {
+    width: 60%;
+    margin: 50px auto;
+    border-collapse: collapse;
+    background-color: #222;
+    color: limegreen;
+    box-shadow: 0 0 15px limegreen;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.leaderboard th, .leaderboard td {
+    padding: 15px;
+    border: 1px solid limegreen;
+    text-shadow: 0 0 10px limegreen;
+    font-size: 1.2em;
+    width: 33%;
+}
+.leaderboard th {
+    background-color: #111;
+}
+.nav-bar {
+    position: fixed;
+    background-color: limegreen;
+    height: 40px;
+    width: 100%;
+    right: 0;
+    top: 0;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+    font-size: 1.2em;
+}
+.homepage, .leaderboard1, .maingame {
+    display: inline-block;
+    margin-left: 25px;
+    color: black;
+    cursor: pointer;
+    transition: color 0.3s ease-in-out;
+}
+.Signin {
+    margin-left: auto;
+    display: flex;
+    gap: 10px;
+    background-color: limegreen;
+}
+.Signin button {
+    background-color: limegreen;
+    border: none;
+    color: black;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease-in-out;
+}
+.Signin button:hover {
+    background-color: green;
+}
+.game {
+    display: none;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    color: limegreen;
+    background-color: black;
+}
+.hang1, .guess1, .scramble1 {
+    width: 300px;
+    height: 300px;
+    margin: 20px;
+    transition: transform 0.3s ease-in-out;
+}
+.hang1:hover, .guess1:hover, .scramble1:hover {
+    transform: scale(1.1);
+}
+@keyframes glow {
+    from {
+        text-shadow: 0 0 10px limegreen;
+    }
+    to {
+        text-shadow: 0 0 20px limegreen, 0 0 40px green;
+    }
+}

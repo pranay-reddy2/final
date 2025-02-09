@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./hangman.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="nav-bar">
+        <div class="homepage">
+            Home
+        </div>
+        <div class="maingame">
+            Game    
+        </div>
+        <div class="leaderboard">
+            LeaderBoard
+        </div> 
+        <div class="Signin">
+            <button id="sign-btn" onclick="sign()">Sign in</button>
+        </div>
+    </div>
+    <div class="game-modal">
+        <div class="content">
+            <img src="images\\lost.gif" alt="gif">
+            <h4>Game Over!</h4>
+            <p>The correct word was: <b>rainbow</b></p>
+            <button class="play-again">Play Again in 5 seconds</button>
+        </div>
+    </div>
+    <div class="container">
+        <div class="hangman-box">
+            <img src="images/hangman-0.svg" alt="hangman-img">
+            <h1>Hangman Game</h1>
+        </div>
+        <div class="game-box">
+            <ul class="word-display">
+            </ul>
+            <h4 class="hint-text">
+                Hint:
+                <b></b>
+            </h4>
+            <h4 class="gusses-text  ">
+                Incorrect guess:
+                <b>0/6</b>
+            </h4>
+            <div class="keyboard"></div>
+        </div>
+    </div>
+    <div class="game">
+        <div class="hang">
+            <h1>HANGMAN</h1>
+            <img class="hang1" src="hangman.webp">
+        </div>
+        <div class="guess">
+            <h1>Guess the Word</h1>
+            <img class="guess1"src="guess.webp">
+        </div>
+        <div class="scramble">
+            <h1>Scramble Word</h1>
+            <img class="scramble1" src="scramble.webp">
+        </div>
+    </div>
+
+    <script src="./word-list.js"></script>
+    <script type="module" src="./hangman.js"></script>
+    <script type="module" src="./update.js"></script>
+
+</body>
+</html>

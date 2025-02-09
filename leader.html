@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leaderboard</title>
+    <link rel="stylesheet" href="./leader.css">
+</head>
+<body>
+    <div class="nav-bar">
+        <div class="homepage">Home</div>
+        <div class="maingame">Game</div>
+        <div class="leaderboard1">LeaderBoard</div>
+        <div class="Signin">
+            <button id="sign-btn">Sign in</button>
+        </div>
+    </div>
+    <h1 class="leaderboard-title">Leaderboard</h1>
+    <table class="leaderboard">
+        <tr>
+            <th>Rank</th>
+            <th>Name</th>
+            <th>Score</th>
+        </tr>
+    </table>
+    <div class="game" style="display: none;">
+        <div class="hang">
+            <h1>HANGMAN</h1>
+            <img class="hang1" src="hangman.webp">
+        </div>
+        <div class="guess">
+            <h1>Guess the Word</h1>
+            <img class="guess1" src="guess.webp">
+        </div>
+        <div class="scramble">
+            <h1>Scramble Word</h1>
+            <img class="scramble1" src="scramble.webp">
+        </div>
+    </div>
+    <script type="module" src="./leader.js"></script>
+</body>
+</html>

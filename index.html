@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./mainpage.css">
+    <script type="module" src="./mainpage.js" defer></script>
+</head>
+
+<body>
+    <div class="nav-bar">
+        <div class="homepage">
+            Home
+        </div>
+        <div class="maingame">
+            Game
+        </div>
+        <div class="leaderboard">
+            LeaderBoard
+        </div>
+        <div class="Signin">
+            <button id="sign-btn" onclick="sign()">Sign in</button>
+        </div>
+    </div>
+    <div class="play">
+        PLAY
+    </div>
+    <div class="signpage" id="sign">
+        <div id="signupmessage" class="messagediv" style="display:None;"></div>
+        <header class="headerlogin">Sign Up</header>
+        <div class="name">
+            <input type="text" class="input-field" placeholder="UserName" id="signname">
+        </div>
+        <div class="Email">
+            <input type="email" class="input-field" placeholder="Email" id="signemail">
+        </div>
+        <div class="password">
+            <input type="password" class="input-field" placeholder="password" id="signpassword">
+        </div>
+        <div class="password">
+            <input type="password" class="input-field" placeholder="confirm password" id="signconfirmpassword">
+        </div>
+        <div class="submit-sign">
+            <button class="s" id="signin-btn">Sign Up</button>
+        </div>
+        <a href="#" onclick="login()">Login</a>
+    </div>
+    <div class="loginpage" id="login">
+        <div id="signinmessage" class="messagediv" style="display:None;"></div>
+        <header class="headerlogin">Login</header>
+        <div class="email">
+            <input type="email" class="input-field" id="signinemail" placeholder="email">
+        </div>
+        <div class="password">
+            <input type="password" class="input-field" id="signinpassword" placeholder="password">
+        </div>
+        <div class="submit-login">
+            <button class="s" id="submit">Login</button>
+        </div>
+        <a href="#" onclick="sign()">Sign Up</a>
+    </div>
+    </div>
+    <div class="game">
+        <div class="hang">
+            <h1>HANGMAN</h1>
+            <img class="hang1" src="hangman.webp">
+        </div>
+        <div class="guess">
+            <h1>Guess the Word</h1>
+            <img class="guess1" src="guess.webp">
+        </div>
+        <div class="scramble">
+            <h1>Scramble Word</h1>
+            <img class="scramble1" src="scramble.webp">
+        </div>
+    </div>
+    <script src="./loginpage.js"></script>
+
+</body>
+
+</html>
